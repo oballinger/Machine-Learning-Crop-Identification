@@ -5,7 +5,7 @@ There are 5 broad steps to this process:
 
 1) Generating training data. I identify sugarcane using crop masks provided by SUPARCO (the Pakistani Space Agency), and other types of landcover (urban, water, desert) visually. 
 
-2) Selecting properly timed imagery. This was done by first filtering the imagery to 2015 (the year the crop masks were created), and to months in which sugarcane is in peak growth while other local crops (mostly rice and wheat) are not. 
+2) Selecting imagery based on crop cycles. This was done by first filtering the imagery to 2015 (the year the crop masks were created), and to months in which sugarcane is in peak growth while other local crops (mostly rice and wheat) are not. 
 
 3) Spectrally disaggregating LANDSAT data. This involves isolating wavelengths that sugarcane most strongly reflects: green (B3, B4), near-infrared (B5), and short-wave infrared (B7). 
 
