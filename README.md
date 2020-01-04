@@ -1,5 +1,5 @@
 # Machine-Learning-Crop-Identification
-Here I show how to integrate information on crop cycles with a CART classification algorithm in Google Earth Engine to identify the annual extent of sugarcane in Pakistan over the course of 34 years. 
+The main file used in this project is SupervisedClassification.js. Here I show how to integrate information on crop cycles with a CART classification algorithm in Google Earth Engine to identify the annual extent of sugarcane in Pakistan over the course of 34 years. 
 
 There are 5 broad steps to this process:
 
@@ -19,3 +19,5 @@ Using the processed 2015 data, a signature file is generated that distinguishes 
 I first do this with the 2015 data, but it can be applied longitudinally because the spectral profiles of the landcover types remain constant throughout time. 
 
 Finally, zonal statistics are extracted for the whole study region and exported to CSV files in google drive. With a detailed shapefile, this would yield data on, for example, the percentage of a district cultivating sugarcane for every year since 1984. This can easily be converted into km² or hectares with information about the area of each polygon. 
+
+There are two auxiliary files: AlgorithmComparison.js uses the same data to compare the performance of Google Earth Engine's different classification algorithms using a confusion matrix and F1 score. TrainingPolygons.js loads the training data used therein. 
